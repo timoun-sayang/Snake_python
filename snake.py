@@ -1,5 +1,6 @@
 import turtle
 import time 
+import random
 
 delay = 0.25
 
@@ -18,6 +19,7 @@ head.goto(0,0)
 head.direction = "stop"
 
 #food
+
 food = turtle.Turtle()
 food.speed(0)
 food.shape("circle")
