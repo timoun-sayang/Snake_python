@@ -1,7 +1,7 @@
 import turtle
 import time 
 
-delay = 0.3
+delay = 0.25
 
 screenGUI = turtle.Screen()
 screenGUI.title("Jeu Snake par Thomas")
@@ -16,6 +16,16 @@ head.color("blue")
 head.penup()
 head.goto(0,0)
 head.direction = "stop"
+
+#food
+food = turtle.Turtle()
+food.speed(0)
+food.shape("circle")
+food.color("red")
+food.penup()
+food.goto(0,100)
+
+
 
 def up():
     head.direction ="up"
